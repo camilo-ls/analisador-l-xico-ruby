@@ -1,0 +1,69 @@
+#comentario
+#teste
+
+def sum_eq_n?(arr, n)
+  return true if arr.empty? && n == 0
+  arr.product(arr).reject { |a,b| a == b }.any? { |a,b| a + b == n }
+  a = 3.4 - -4.3
+  b = -2 + 2
+  c = "exemplo de string";
+  d = "e";
+  e = 'e';
+  e = 'e'
+end
+=begin
+
+comentariooooooooo
+=end
+class Animal
+  def name
+    puts "Animal"
+  end
+end
+class Cat < Animal
+  def name
+    super
+  end
+end
+cat = Cat.new
+cat.name
+
+def puts(*)
+  super
+end
+
+puts 1, 2, 3
+
+S = SwitchBank.new
+A = AndGate.new
+#A.join(Tester.new("A"))
+B = OrGate.new
+#B.join(Tester.new("B"))
+C = AndGate.new
+#C.join(Tester.new("C"))
+D = OrGate.new
+#D.join(Tester.new("D"))
+E = NotGate.new
+L = LED.new('Result')
+
+A.join(D)
+B.join(D)
+C.join(D)
+D.join(E)
+D.join(A)
+D.join(C)
+
+S.join(A)
+S.join(B)
+S.join(B)
+S.join(C)
+
+E.join(L)
+
+for x in (0..15)
+  for s in [3,2,1,0]
+    print (x>>s) & 1
+  end
+  print " => "
+  S.value = x
+end

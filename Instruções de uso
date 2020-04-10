@@ -1,0 +1,12 @@
+	O analisador léxico foi feito em C++, então para compilar o programa, 
+execute:
+-> g++ anlex.cpp -o nome_compilado
+
+	O programa lê qualquer entrada 'stdin', assumindo que o que for passado como
+entrada está na linguagem Ruby. Portanto, para executá-lo, você poderá utilizar 
+os operadores de direcionamento de entrada e saída do Linux, como, por exemplo:
+-> ./nome_compilado < input.txt
+
+A saída deverá ser impressa no terminal. Caso você deseje exportar a saída para 
+um arquivo, basta executar:
+-> ./nome_compilado < input.txt > output.txt
